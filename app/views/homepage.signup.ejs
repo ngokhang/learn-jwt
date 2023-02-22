@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        input {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sign up form</h1>
+    <form action="/user" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="account">Account</label>
+                </td>
+                <td>
+                    <input type="text" name="account" id="account" placeholder="Account">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fullName">Your name</label>
+                </td>
+                <td>
+                    <input type="text" name="fullName" id="fullName" placeholder="fullName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Sign Up</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

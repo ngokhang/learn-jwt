@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Homepage</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Fullname</th>
+            <th>Account</th>
+            <th>Posts</th>
+            <!-- <th>Last active</th> -->
+            <th>Options</th>
+        </tr>
+        <% listUsers.forEach(element=> { %>
+            <tr>
+                <td>
+                    <%= element._id %>
+                </td>
+                <td>
+                    <%= element.fullName %>
+                </td>
+                <td>
+                    <%= element.account %>
+                </td>
+                <td>
+                    <%= element.posts %>
+                </td>
+                <td>
+                    <a href="#">Banned</a>
+                    <a href="#">Delete</a>
+                    <a href="#">Edit</a>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+</body>
+
+</html>
